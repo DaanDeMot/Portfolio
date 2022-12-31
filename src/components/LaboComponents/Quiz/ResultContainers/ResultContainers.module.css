@@ -1,0 +1,53 @@
+.RightAnswerContainer{
+    width: 20%;
+    position: fixed;
+    left:0%;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.WrongAnswerContainer{
+    width: 20%;
+    position: fixed;
+    right:0%;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.Answer_label{
+    text-align: center;
+    margin: 0.5%;
+    font-size: 1rem;
+    color: #2E2F5B;
+}
+
+.Answer_amount{
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    color: #2E2F5B;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+
+/** --------------------------------------------- **/
+/** --------------- Tablet CSS ------------------- **/
+@media screen and (max-width: 900px) {
+
+    /** ----CONTAINERS------- **/
+    /** ----------------- **/
+  
+    /** ----Elements------ **/
+    .Answer_amount, .Answer_label {
+        font-size: 0.65rem;
+    }
+    /** ------------------ **/
+  
+    /** ------Hovers------ **/
+    /** ----------------- **/
+  }
+  
+  /** --------------------------------------------- **/
+  /** --------------- Phone CSS ------------------- **/
+  @media screen and (max-width: 480px) and (min-width: 220px) {}
+  
+  /** --------------------------------------------- **/

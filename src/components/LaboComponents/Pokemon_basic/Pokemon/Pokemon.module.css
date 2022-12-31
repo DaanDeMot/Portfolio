@@ -1,0 +1,114 @@
+.container{
+    display: flex;
+    justify-content: center;
+    padding-left: 15%;
+}
+
+.pokemon_container{
+    max-width: fit-content;
+    padding: 0 5%;
+    text-align: center;
+}
+
+.pokemon{
+    min-height: 5vh;
+    border: 1px solid white;
+    transition: 0.2s;
+    display: flex;
+    justify-content:center;
+    vertical-align: center;
+    text-transform: uppercase;
+}
+
+.pokemon:hover{
+    background-color: transparent;
+    min-height: 5vh;
+    transform: scale(1.2);
+    letter-spacing: 0.1rem;
+    transition: 0.3s;
+}
+
+.input_field{
+    border: none;
+    border-bottom: 1px solid rgb(46 47 91 / 1);
+    width: 90%;
+    height:5vh;
+    margin-bottom: 2%;
+    font-size: 1.2rem;
+    font-style: italic;
+    padding: 0 1%;
+    transition: 0.5s;
+    text-align: center;
+ }
+ .input_field:hover{
+    transform: scale(1.15) translateY(.125rem);
+    transition: 0.2s;
+ }
+
+ .input_field:focus{
+    transform: scale(1.2) translateY(.125rem);
+    transition: 0.5s;
+ }
+
+ .quantity_container{
+    max-width: 20vh;
+
+ }
+
+ .button_container{
+    text-align: center;
+    margin: 5% 0;
+    padding: 5%;
+ }
+.button_80 {
+    background: #fff;
+    border-radius: .375rem;
+    border-width: .125rem;
+    color: rgb(46 47 91/ 1);
+    border-color: rgb(46 47 91/ 1) ;
+    cursor: pointer;
+    font-family: Circular,Helvetica,sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: -.01em;
+    line-height: 1.3;
+    padding: .875rem 1.125rem;
+    transform: translateZ(0) scale(1);
+    transition: transform .2s;
+    margin: 0 auto;
+  }
+  
+  .button_80:not(:disabled):hover {
+    transform: scale(1.05);
+  }
+  
+  .button_80:not(:disabled):hover:active {
+    transform: scale(1.05) translateY(.125rem);
+    background-color: rgb(46 47 91/ 0.3);
+  }
+  
+  .button_80:focus {
+    outline: 0 solid transparent;
+  }
+  
+  .button_80:focus:before {
+    left: calc(-1*.375rem);
+    pointer-events: none;
+    position: absolute;
+    top: calc(-1*.375rem);
+    transition: border-radius;
+    user-select: none;
+  }
+  
+  .button_80:focus:not(:focus-visible) {
+    outline: 0 solid transparent;
+  }
+  
+  .button_80:focus:not(:focus-visible):before {
+    border-width: 0;
+  }
+  
+  .button_80:not(:disabled):active {
+    transform: translateY(.125rem);
+  }
+   

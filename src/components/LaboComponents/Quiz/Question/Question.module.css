@@ -1,0 +1,177 @@
+.QuestionListContainer{
+    width: 65%;
+    margin: 2% auto;
+    padding: 2% 0;
+}
+
+.SingleQuestionContainer{
+    border-radius: 10px;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 7%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.questionTitle{
+    margin: 1% 2% 3% 2%;
+    color:#2E2F5B;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.questionSelect {
+    margin-left: 20%;
+    margin-bottom: 2%;
+    border: 2px solid #2E2F5B;
+    width: 60%;
+    padding: 1% 0;
+    text-align: center;
+    color:#2E2F5B;
+    font-style: italic;
+}
+
+.question_header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+.questionCategory{
+    margin: 0 ;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.questionType{
+    margin: 0;
+    margin-left: 5%;
+    font-style: italic;
+    font-size: 0.9rem;
+    color:#2E2F5B;
+}
+.questionContent{
+    border-top: 1px solid black;
+    margin-top: 1%;
+    padding-bottom: 1%;
+}
+
+.options{
+    justify-content: center;
+    display: flex;
+}
+
+.radioButtonLabel{
+    border: 1px solid;
+    width: 50%;
+    float: right;
+}
+
+.feedback{
+    font-size: large;
+    text-align: center;
+}
+
+  .rightAnswer{
+    background-color: rgba(34, 139, 34, 0.25);
+    border-radius: 10px;
+    border: 1px solid rgba(34, 139, 34, 0.25) ;
+  }
+
+  .wrongAnswer{
+    background-color: rgba(192, 0, 0, 0.35);
+    border-radius: 10px;
+  }
+
+  .loadMoreButton{
+    width: 35%;
+    margin-bottom: 3%;
+    height: 5vh;
+  }
+  .button_81 {
+    background-color: #fff;
+    border: 1 solid #2E2F5B;
+    border-radius: 1rem;
+    margin:0 2%;
+    box-sizing: border-box;
+    color: #2E2F5B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 1rem 1.6rem;
+    text-align: center;
+    box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+    transition: transform 0.3s;
+  }
+  
+  .button_81:hover {
+    background-color: #2E2F5B;
+    color: #fff;
+    transform: scale(1.15) translateY(0.525rem);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: transform 0.6s;
+  }
+  
+  
+/** --------------------------------------------- **/
+/** --------------- Tablet CSS ------------------- **/
+@media screen and (max-width: 900px) {
+
+  /** ----CONTAINERS------- **/
+  .SingleQuestionContainer{
+    padding-bottom: 5%;
+  }
+
+  .question_header{
+    display: flex;
+    flex-direction: column;
+  }
+  /** -------------------- **/
+
+  /** ----Elements------ **/
+
+  .questionTitle{
+    font-size: 0.8rem;
+  }
+
+  .questionType, .questionCategory{
+    font-size: 0.7rem;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-left: 2%;
+  }
+
+  .button_81{
+    background-color: #fff;
+    border: 1 solid #2E2F5B;
+    border-radius: 1rem;
+    margin:0 2%;
+    box-sizing: border-box;
+    color: #2E2F5B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 0.7rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 0.3rem 0.6rem;
+    text-align: center;
+    box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+    transition: transform 0.3s;
+
+  }
+  /** ------------------ **/
+
+  /** ------Hovers------ **/
+  /** ----------------- **/
+}
+
+/** --------------------------------------------- **/
+/** --------------- Phone CSS ------------------- **/
+@media screen and (max-width: 480px) and (min-width: 220px) {}
+
+/** --------------------------------------------- **/

@@ -1,0 +1,12 @@
+footer{
+    width: 100%;
+    text-align: center;
+    transition: 1s;
+}
+
+h3{
+    border-top: 1px solid #2E2F5B;;
+    display: inline-block;
+    width: 50%;
+    color:#2E2F5B;
+}

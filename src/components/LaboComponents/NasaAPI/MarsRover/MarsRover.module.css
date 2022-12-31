@@ -1,0 +1,117 @@
+.section{
+    margin-bottom: 30%;
+}
+.title_section{
+    width: 35%;
+    text-align: center;
+}
+.title{
+    color: rgb(46 47 91 / 1);
+    font-weight: normal;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    font-style: italic;
+    margin: 0;
+    border-bottom: 1px solid rgb(46 47 91 / 0.6);
+}
+
+.section_data_title{
+    text-align: center;
+    color: rgb(46 47 91 / 1);
+    font-weight: normal;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    font-style: italic;
+    margin: 0;
+}
+
+.rover_img{
+    max-width: 100%;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px 0px;
+}
+
+.layout{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+
+.layout:hover .img_data {
+    transform: translateY(100%);
+    transition: 0.5s ease-in-out;
+}
+
+.img_data{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    width: 75%;
+    height: fit-content;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+}
+
+.rover_name{
+    color: rgb(46 47 91 / 1);
+    font-weight: normal;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+}
+
+.description{
+    color: rgb(46 47 91 / 1);
+    font-weight: normal;
+    letter-spacing: 0.15rem;
+    font-size: 0.9rem;
+    padding: 0 2%;
+}
+
+.loader_container{
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+
+/** --------------- Tablet CSS ------------------- **/
+@media screen and (max-width: 900px) {
+  /** ----CONTAINERS------- **/
+  .title_section{
+    width: 100%;
+  }
+
+  .layout{
+    width: 100%;
+  }
+.img_data{
+    position: relative;
+    width: 100%;
+}
+  /** -------------------- **/
+
+  /** ----Elements------ **/
+    .rover_img{
+        max-width: 90vw;
+    }
+  /** ------------------ **/
+
+/** ------Hovers------ **/
+.layout:hover .img_data {
+    transform:none;
+    transition: 0.5s ease-in-out;
+}
+/** ----------------- **/
+  }
+  /** --------------------------------------------- **/
+  /** --------------- Phone CSS ------------------- **/
+  @media screen and (max-width: 480px) and (min-width: 220px) {
+  }
+  /** --------------------------------------------- **/

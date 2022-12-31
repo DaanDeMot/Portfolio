@@ -1,0 +1,18 @@
+.ticTac{
+    border: 1px solid black;
+    width: fit-content;
+    margin: 10% auto;
+    display: grid; 
+    grid-template-rows: 10vh 10vh 10vh; 
+    grid-template-columns: 10vh 10vh 10vh;
+  }
+  
+  .tile{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:2rem;
+    color: #2E2F5B;
+    font-weight: bolder;
+  }

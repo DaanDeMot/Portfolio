@@ -1,0 +1,130 @@
+/* ------ To Do Input ------ */
+.input_container {
+  border-bottom: 2px solid rgb(46 47 91 / 1);
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.input_field {
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid rgb(46 47 91 / 1);
+  width: 50%;
+  height: 5vh;
+  margin-bottom: 2%;
+  font-size: 1.2rem;
+  font-style: italic;
+  padding: 0 1%;
+  transition: 0.5s;
+}
+
+.input_field:focus {
+  transform: scale(1.05) translateY(.125rem);
+  transition: 0.5s;
+}
+
+.button_container {
+  margin-bottom: 1%;
+}
+
+/* ------ To Do Item ------ */
+.item_container {
+  border-bottom: 1px solid rgb(46 47 91 / 0.4);
+  width: 55%;
+  margin: 0 auto;
+  height: 5vh;
+  font-size: 1.4rem;
+  margin-top: 2%;
+}
+
+.button_80 {
+  background: #fff;
+  border-radius: .375rem;
+  border-width: .125rem;
+  color: rgb(46 47 91/ 1);
+  border-color: rgb(46 47 91/ 1);
+  cursor: pointer;
+  font-family: Circular, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.3;
+  padding: .875rem 1.125rem;
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+  margin: 0 auto;
+}
+
+.button_80:not(:disabled):hover {
+  transform: scale(1.05);
+}
+
+.button_80:not(:disabled):hover:active {
+  transform: scale(1.05) translateY(.125rem);
+  background-color: rgb(46 47 91/ 0.3);
+}
+
+.button_80:focus {
+  outline: 0 solid transparent;
+}
+
+.button_80:focus:before {
+  left: calc(-1*.375rem);
+  pointer-events: none;
+  position: absolute;
+  top: calc(-1*.375rem);
+  transition: border-radius;
+  user-select: none;
+}
+
+.button_80:focus:not(:focus-visible) {
+  outline: 0 solid transparent;
+}
+
+.button_80:focus:not(:focus-visible):before {
+  border-width: 0;
+}
+
+.button_80:not(:disabled):active {
+  transform: translateY(.125rem);
+}
+
+/** --------------------------------------------- **/
+/** --------------- Tablet CSS ------------------- **/
+@media screen and (max-width: 900px) {
+
+  /** ----CONTAINERS------- **/
+  .input_container {
+    width: 100%;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+  }
+
+  .item_container {
+    width: 100%;
+  }
+
+  /** ----------------- **/
+
+  .input_field {
+    font-size: 0.7rem;
+    width: 70%;
+  }
+
+  .button_80 {
+    font-size: 0.8rem;
+    padding: .275rem 1.125rem;
+  }
+
+  /** ------------------ **/
+
+  /** ------Hovers------ **/
+  /** ----------------- **/
+}
+
+/** --------------------------------------------- **/
+/** --------------- Phone CSS ------------------- **/
+@media screen and (max-width: 480px) and (min-width: 220px) {}
+
+/** --------------------------------------------- **/

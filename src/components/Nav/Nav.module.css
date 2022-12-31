@@ -1,0 +1,106 @@
+  nav{
+    height:50px;
+    width: 50%;
+    display:flex;
+    flex-direction:row;
+    align-items:stretch;
+    text-transform: uppercase;
+    letter-spacing: 0.5vh;
+  }
+  .link_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .activeNavLink{
+    background-color: #2E2F5B;
+    color: white;
+    min-width: 10vw;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 11pt;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+     cursor: pointer;
+     box-shadow: inset 0 0 0 0 #2E2F5B;
+     margin: 0 -.25rem;
+     padding: 0 1.25rem;
+  }
+  
+  .navLink{
+    min-width: 10vw;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 11pt;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+     cursor: pointer;
+     box-shadow: inset 0 0 0 0 #2E2F5B;
+     color: #2E2F5B;
+     margin: 0 -.25rem;
+     padding: 0 1.25rem;
+     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+
+  .navLink:hover{
+    box-shadow: inset 30vw 0 0 0 #2E2F5B;
+    color: white;
+  }
+/*-------------------------------------- */
+/*--------------- TABLET --------------- */
+  @media screen and (max-width: 960px) {
+    nav{
+      display: flex;
+      width: 90%;
+      margin: 0 auto;
+      text-align: center; 
+    }
+    .link_container{
+      justify-content: center;
+    }
+    .navLink, .activeNavLink{
+      margin: 0;
+      display: flex;
+      max-height: 5vw;
+      font-size: 1.5vw;
+      letter-spacing: 0.5vw;
+    }
+    .menu_icon:hover .link_container{
+      display: inline;
+    }
+  }
+  
+/*-------------------------------------- */
+/** --------------- Phone CSS ------------------- **/
+@media screen and (max-width: 480px) and (min-width: 220px) {
+  nav{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center; 
+  }
+  .link_container{
+    justify-content: center;
+  }
+  .navLink, .activeNavLink{
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .navLink, .activeNavLink{
+    font-size: 2vw;
+  }
+
+  .menu_icon:hover .link_container{
+    display: inline;
+  }
+}
+/** --------------------------------------------- **/
+
+
+
+
+

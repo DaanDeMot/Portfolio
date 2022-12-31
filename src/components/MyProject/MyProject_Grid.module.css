@@ -1,0 +1,99 @@
+.project_container{
+    border-radius: 5px;;
+    width: 45%;
+    height:35vh;
+    margin-left: 5%;
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.project_titel{
+    color: #2E2F5B;
+    font-size: 2vw;
+    letter-spacing: 0.1rem;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+    margin-top: 2%;
+}
+
+  
+
+.project_description{
+    color:rgb(46 47 91 / 0.8);
+    width: 95%;
+    font-size: 1vw;
+    letter-spacing: 0.1vw;
+    position: absolute;
+    top: 30%;
+    left: 2.5%;
+}
+
+.project_link_container{
+    transition:  .1s;
+      font-size: 1rem;
+    width: max-content;
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+    margin-right: 5%;
+}
+
+.project_link_container:hover{
+    transform: scale(1.05) translateY(-.225rem);
+    transition: transform .3s;
+    letter-spacing: 0.05rem;
+}
+
+.project_link{
+    color:#2E2F5B;
+    font-style: italic;
+    text-decoration: none;    
+}
+
+
+
+/** TABLET CSS **/
+@media screen and (max-width: 960px){
+   .project_container{
+    max-height: 30vh;
+   }
+   .project_link{
+    font-size: 0.7rem;
+   }
+   .project_description{
+    margin: 0;
+    font-size: 0.5rem;
+}
+  }
+
+   /** --------------- Phone CSS ------------------- **/
+@media screen  and (max-width: 480px) and (min-width: 220px){
+
+    .project_titel{
+        min-height: 7.5vh;
+        width: 90%;
+        left: 5%;
+        font-size: 1rem;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+    }
+
+    .project_description{
+        top: 10vh;
+        left: 5%;
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        font-size: 0.5rem;
+    }
+
+    .project_link{
+        font-size: 0.4rem;
+        width: 90%;
+       }
+ }
+      /** --------------------------------------------- **/

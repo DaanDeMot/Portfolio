@@ -1,0 +1,234 @@
+/*--------- Containers ------- */
+
+.container {
+  width: 80%;
+  margin: 5% auto;
+  margin-bottom: 15vh;
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 3px, rgba(0, 0, 0, 0.23) 0px 2px 3px;
+  transition: 0.8s;
+}
+.work_section_header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  max-height: 10vh;
+}
+
+.workImage_container {
+  margin-left: 2%;
+  max-height: 10vh;
+}
+
+.work_section_subheader {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  padding: 0.5% 2%;
+}
+
+.sub_title_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work_container {
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.extra_section {
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  transition: 1s;
+  height: fit-content;
+}
+/*------------------------ */
+
+/*--------- Elements ------- */
+.work_title {
+  text-align: right;
+  color: #2e2f5b;
+  box-shadow: rgba(17, 17, 26, 0.4) 0px 1px 0px;
+  width: fit-content;
+  font-size: 2vw;
+  margin: 0 auto;
+  padding: 0 15%;
+}
+
+.work_description {
+  width: 70%;
+  font-style: italic;
+  color: rgb(46 47 91 / 0.8);
+  display: inline-block;
+  text-align: center;
+  margin: 2% 15%;
+  letter-spacing: 0.07rem;
+}
+.workPlace_description {
+  color: rgb(46 47 91 / 0.9);
+  font-style: italic;
+  width: 85%;
+  margin: 2% auto;
+}
+.workPlace_link {
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 3%;
+  color: rgb(46 47 91 / 0.9);
+  font-style: italic;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.workPlace_link a {
+  text-decoration: none;
+  color: #2e2f5b;
+}
+.workPlace_link a:active {
+  font-weight: bold;
+  color: #2e2f5b;
+}
+.workImage {
+  max-height: 10vh;
+  margin: 0;
+  padding: 0;
+}
+.work_hoverMe {
+  max-width: fit-content;
+  margin: 0;
+  font-size: 0.9rem;
+  margin-left: 1%;
+  font-style: italic;
+  opacity: 1;
+  transition: 0.5s;
+  color: rgb(46 47 91 / 0.3);
+}
+
+.work_company,
+.work_timePeriod {
+  margin: 0;
+  padding: 0;
+  color: rgb(46 47 91 / 0.7);
+  font-style: italic;
+  font-weight: light;
+  letter-spacing: 0.1rem;
+}
+.work_timePeriod {
+  font-size: 0.9vw;
+}
+.work_company {
+  margin: 0;
+  font-size: 1vw;
+}
+/*------------------------ */
+
+/*--------- Hovers ------- */
+.container:hover .extra_section {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  transform: translateY(95%);
+  transition: transform 1s;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 3px, rgba(0, 0, 0, 0.23) 0px 2px 3px;
+}
+
+.container:hover .work_container {
+  border-bottom: none;
+  box-shadow: none;
+}
+
+.container:hover .work_hoverMe {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.container:hover {
+  margin-bottom: 35vh;
+  transition: 1s;
+}
+
+.workPlace_link:hover {
+  transform: scale(1.05) translateY(-0.225rem);
+  letter-spacing: 0.09rem;
+  transition: 0.3s;
+}
+
+/** ----------------TABLET CSS---------------- **/
+@media screen and (max-width: 960px) {
+  /*--------- Containers ------- */
+  .container {
+    padding-top: 2%;
+  }
+
+  .work_section_header {
+    flex-direction: column;
+    max-height: fit-content;
+    align-items: center;
+  }
+
+  .work_section_subheader {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /*------------------------ */
+
+  /*--------- Elements ------- */
+  .work_title {
+    font-size: 3.5vw;
+    padding-bottom: 1.5%;
+    margin-bottom: 2%;
+  }
+
+  .work_description {
+    font-size: 1.5vw;
+  }
+  .workPlace_description {
+    font-size: 1.7vw;
+  }
+
+  .work_hoverMe {
+    display: none;
+  }
+
+  .work_company,
+  .work_timePeriod {
+    font-size: 2.5vw;
+  }
+
+  /*------------------------ */
+}
+
+/** --------------- Phone CSS ------------------- **/
+@media screen and (max-width: 480px) and (min-width: 220px) {
+  .sub_title_container {
+    margin: 2.5% 0;
+  }
+
+  .work_company,
+  .work_timePeriod {
+    font-size: 2vw;
+  }
+
+  .workImage {
+    max-width: 30vw;
+  }
+  .workPlace_description {
+    font-size: 2.5vw;
+  }
+  .workPlace_link {
+    font-size: 0.7rem;
+  }
+}
+/** --------------------------------------------- **/

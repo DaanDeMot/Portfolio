@@ -1,0 +1,17 @@
+.socials_container{
+    border-top: 1px solid rgb(46 47 91 / 1);;
+width: max-content;
+margin: 0 auto;
+padding: 2% 20%;
+}
+.icon{
+height: 5vh;
+transition: 0.7s;
+margin-left: 1vh;
+}
+
+.icon:hover{
+    transform: translateY(-2vh) scale(1.2);
+    transition: 0.5s;
+}
+

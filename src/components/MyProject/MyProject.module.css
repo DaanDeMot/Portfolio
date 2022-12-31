@@ -1,0 +1,126 @@
+.project_container {
+  border-radius: 5px;
+  width: 90%;
+  margin: 2% auto;
+  display: flex;
+  max-height: 30vh;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.project_titel {
+  text-align: right;
+  color: #2e2f5b;
+  font-size: 30px;
+  margin: 3% 0%;
+  margin-right: 5%;
+}
+
+.project_section {
+  display: flex;
+  flex-direction: column;
+}
+
+.project_description {
+  width: 80%;
+  margin-left: 5%;
+  font-size: 1vw;
+  letter-spacing: 0.07rem;
+  display: inline-block;
+  color: rgb(46 47 91 / 0.8);
+  margin-bottom: auto;
+}
+
+.project_image_container {
+  margin: 1.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project_image {
+  padding: 0%;
+  max-width: 40vh;
+}
+
+.project_link_container {
+  transition: 0.1s;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  margin-right: 5%;
+  margin-bottom: 2%;
+}
+
+.project_link_container:hover {
+  transform: scale(1.05) translateY(-0.225rem) translateX(-0.05rem);
+  transition: 0.3s;
+  letter-spacing: 0.05rem;
+}
+
+.project_link {
+  color: #2e2f5b;
+  font-style: italic;
+  text-decoration: none;
+}
+
+/** --------------- Phone CSS ------------------- **/
+@media screen and (max-width: 480px) and (min-width: 220px) {
+  .project_titel {
+    font-size: 0.8rem;
+  }
+  
+.project_image_container {
+    display: none;
+  }
+  
+  .project_image {
+    padding: 0%;
+    max-width: 40vh;
+  }
+
+  .project_description {
+    font-size: 0.5rem;
+  }
+
+  .project_link {
+    font-size: 0.6rem;
+  }
+}
+/** --------------------------------------------- **/
+
+/** TABLET CSS **/
+@media screen and (max-width: 900px) {
+  .project_container {
+    flex-direction: column;
+    text-align: center;
+    max-height: fit-content;
+    max-width: 70%;
+    margin-bottom: 5%;
+    padding-bottom: 2%;
+  }
+
+  .project_section {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .project_link_container {
+    justify-content: center;
+    align-self: center;
+  }
+  .project_link {
+    margin: 0;
+    padding: 0;
+  }
+  .project_titel {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .project_description {
+    margin: 5% auto;
+    width: 80%;
+  }
+}
